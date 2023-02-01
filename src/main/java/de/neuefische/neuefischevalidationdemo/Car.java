@@ -26,5 +26,5 @@ public class Car {
     private String color;
 
     @NotEmpty
-    private List<String> features;
+    private List<@NotNull @Size(min = 1) String> features;
 }
